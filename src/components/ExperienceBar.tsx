@@ -1,4 +1,4 @@
-import styles from '../styles/components/ExperienceBar.module.css'
+import styles from '../styles/components/ExperienceBar.module.scss'
 
 export function ExperienceBar() {
     return (
