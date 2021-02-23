@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from '../styles/components/Countdown.module.css'
 
 export function CountDown() {
-    const [time, setTime] = useState(1 * 60)
+    const [time, setTime] = useState(25 * 60)
     const [active, setActice] = useState(false)
 
     const minutes = Math.floor(time / 60);
