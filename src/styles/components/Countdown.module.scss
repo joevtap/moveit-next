@@ -57,4 +57,10 @@
 
     font-size: 1.25rem;
     font-weight: 600;
+
+    transition: background 200ms;
+
+    &:hover {
+        background: var(--blue-dark);
+    }
 }
