@@ -6,6 +6,7 @@ import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 import styles from "../styles/pages/Home.module.scss";
 import Head from "next/head";
+import { CountdownProvider } from "../contexts/CountdownContext";
 
 export default function Home() {
     return (
@@ -14,17 +15,18 @@ export default function Home() {
                 <title>Move.it</title>
             </Head>
             <ExperienceBar />
-
-            <section>
-                <div>
-                    <Profile />
-                    <CompletedChallenges />
-                    <CountDown />
-                </div>
-                <div>
-                    <ChallengeBox />
-                </div>
-            </section>
+            <CountdownProvider>
+                <section>
+                    <div>
+                        <Profile />
+                        <CompletedChallenges />
+                        <CountDown />
+                    </div>
+                    <div>
+                        <ChallengeBox />
+                    </div>
+                </section>
+            </CountdownProvider>
         </div>
     );
 }
@@ -32,3 +34,4 @@ export default function Home() {
 // Dia 1: #juntosparaoproximonivel
 // Dia 2: #jornadainfinita
 // Dia 3: #focopraticagrupo
+// Dia 4: #neverstoplearning
